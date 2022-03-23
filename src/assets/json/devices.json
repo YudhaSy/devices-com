@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Device 1",
+    "status": "Available",
+    "icon": "fa-solid fa-mobile-screen fa-2xl",
+    "info": "Hello I am Device 1"
+  },
+  {
+    "id": 2,
+    "name": "Device 2",
+    "status": "Offline",
+    "icon": "fa-2xl fa-solid fa-tablet-screen-button",
+    "info": "Hello I am Device 2"
+  },
+  {
+    "id": 3,
+    "name": "Device 3",
+    "status": "Available",
+    "icon": "fa-solid fa-display fa-2xl",
+    "info": "Hello I am Device 3"
+  },
+  {
+    "id": 4,
+    "name": "Device 4",
+    "status": "Available",
+    "icon": "fa-solid fa-display fa-2xl",
+    "info": "Hello I am Device 4"
+  }
+]

@@ -1,0 +1,18 @@
+<div *ngFor="let device of devices">
+  <div class="container-fluid mt-2 background-color clickable" (click)="showDevice(device.id)">
+    <div class="row">
+      <div class="col-1 d-flex align-items-center justify-content-center">
+        <i class="{{device.icon}}"></i>
+      </div>
+      <div class="col-10 my-5">
+        <div>{{device.name}}</div>
+        <div>Status: {{device.status}}</div>
+      </div>
+      <div *ngIf="device.info" class="col-1 d-flex align-items-center justify-content-center">
+        <i class="fa-solid fa-circle-info"
+           tooltip="{{device.info}}"
+           placement="left"></i>
+      </div>
+    </div>
+  </div>
+</div>

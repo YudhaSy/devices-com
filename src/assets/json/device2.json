@@ -1,0 +1,32 @@
+{
+  "id": 2,
+  "name": "Device 2",
+  "status": "Offline",
+  "details": {
+    "temperature": "13 Celsius",
+    "usage": {
+      "placeHolder": "/assets/images/device2.png"
+    },
+    "relatedDevices": [
+      {
+        "id": 1,
+        "name": "Device 1",
+        "status": "Available",
+        "icon": "fa-solid fa-mobile-screen fa-2xl"
+      },
+      {
+        "id": 3,
+        "name": "Device 3",
+        "status": "Available",
+        "icon": "fa-solid fa-display fa-2xl"
+      },
+      {
+        "id": 4,
+        "name": "Device 4",
+        "status": "Available",
+        "icon": "fa-solid fa-display fa-2xl"
+      }
+    ]
+  }
+
+}

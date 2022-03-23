@@ -1,0 +1,31 @@
+{
+  "id": 4,
+  "name": "Device 4",
+  "status": "Available",
+  "details": {
+    "temperature": "11 Celsius",
+    "usage": {
+      "placeHolder": "/assets/images/device4.png"
+    },
+    "relatedDevices": [
+      {
+        "id": 1,
+        "name": "Device 1",
+        "status": "Available",
+        "icon": "fa-solid fa-mobile-screen fa-2xl"
+      },
+      {
+        "id": 2,
+        "name": "Device 2",
+        "status": "Offline",
+        "icon": "fa-2xl fa-solid fa-tablet-screen-button"
+      },
+      {
+        "id": 3,
+        "name": "Device 3",
+        "status": "Available",
+        "icon": "fa-solid fa-display fa-2xl"
+      }
+    ]
+  }
+}

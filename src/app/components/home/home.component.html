@@ -1,0 +1,18 @@
+<div class="container-fluid mt-2">
+  <app-search
+    [searchTerm]="searchTerm"
+    (searchTermChange)="applyFilter($event)">
+  </app-search>
+  <ng-container *ngIf="deviceDetails === undefined else showDeviceDetails">
+    <app-list
+      [devices]="devicesForView"
+      (selectedDeviceID)="showDevice($event)">
+    </app-list>
+  </ng-container>
+  <ng-template #showDeviceDetails>
+    <app-device
+      [device]="deviceDetails"
+      (selectRelatedDevice)="showDevice($event)">
+    </app-device>
+  </ng-template>
+</div>
