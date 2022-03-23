@@ -13,6 +13,10 @@ export class HomeComponent {
   deviceDetails!: Device;
 
   constructor(private devicesService: DevicesService) {
+    this.getDeviceList();
+  }
+
+  getDeviceList() {
     this.devicesService.getDevices().subscribe((devices: Device[]) => {
       this.devices = [...devices];
       this.devicesForView = [...devices];

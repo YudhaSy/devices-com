@@ -1,26 +1,24 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import {SearchComponent} from './search.component';
 import {HttpClientModule} from '@angular/common/http';
-import {FormsModule} from '@angular/forms';
+import {CUSTOM_ELEMENTS_SCHEMA} from "@angular/core";
+import {DetailsComponent} from './details.component';
 
-describe('SearchComponent', () => {
-  let component: SearchComponent;
-  let fixture: ComponentFixture<SearchComponent>;
+describe('DetailsComponent', () => {
+  let component: DetailsComponent;
+  let fixture: ComponentFixture<DetailsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SearchComponent ],
-      imports: [
-        HttpClientModule,
-        FormsModule
-      ]
+      declarations: [ DetailsComponent ],
+      imports: [ HttpClientModule ],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SearchComponent);
+    fixture = TestBed.createComponent(DetailsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
